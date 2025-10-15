@@ -6,6 +6,15 @@
  */
 
 /* Main custom viewer container */
+
+.css-wvdg6g-modalHeader {
+  display: none !important;
+}
+
+.css-be1y63-modalFooter {
+  display: none !important;
+}
+
 #custom-pdf-viewer {
   /* Fill the entire modal body area */
   width: 100%;
