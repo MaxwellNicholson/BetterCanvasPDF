@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "Canvas PDF Viewer Interceptor",
+  "version": "1.0.0",
+  "description": "Intercepts Canvas LMS PDF viewer and replaces it with a customizable blank slate viewer",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.instructure.com/*"],
+      "js": ["content-script.js"],
+      "css": ["styles.css"],
+      "run_at": "document_end"
+    }
+  ],
+  "permissions": [],
+  "host_permissions": [
+    "https://*.instructure.com/*"
+  ]
+}

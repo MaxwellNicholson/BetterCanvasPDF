@@ -1,0 +1,107 @@
+/**
+ * Canvas PDF Viewer Interceptor - Custom Viewer Styles
+ * 
+ * This file contains minimal baseline styles for the custom PDF viewer container.
+ * The styles are intentionally minimal to provide maximum flexibility for customization.
+ */
+
+/* Main custom viewer container */
+#custom-pdf-viewer {
+  /* Fill the entire modal body area */
+  width: 100%;
+  height: 100%;
+  
+  /* Flexbox for easy content centering and layout */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  /* Light background for visibility during development */
+  /* Replace with your desired styling */
+  background-color: #f5f5f5;
+  
+  /* Subtle border for testing and development */
+  /* Remove this in production */
+  border: 2px dashed #ccc;
+  
+  /* Prevent content overflow */
+  overflow: hidden;
+  
+  /* Ensure proper positioning */
+  position: relative;
+  
+  /* Smooth transitions for future animations */
+  transition: background-color 0.3s ease;
+}
+
+/* Inner content container */
+#pdf-viewer-content {
+  /* Flexbox for content layout */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  /* Allow content to grow if needed */
+  width: 100%;
+  height: 100%;
+  
+  /* Padding for visual spacing */
+  padding: 20px;
+  
+  /* Box sizing for consistent dimensions */
+  box-sizing: border-box;
+}
+
+/* 
+ * ADD YOUR CUSTOM STYLES BELOW THIS LINE
+ * ======================================
+ * 
+ * Ideas for customization:
+ * - Add a toolbar container for controls
+ * - Style the PDF canvas or embed element
+ * - Add loading spinners or progress indicators
+ * - Customize scrollbar appearance
+ * - Add zoom controls styling
+ * - Implement dark mode support
+ * 
+ * Example structure you might add:
+ * 
+ * #custom-pdf-viewer .pdf-toolbar {
+ *   position: absolute;
+ *   top: 0;
+ *   left: 0;
+ *   right: 0;
+ *   height: 50px;
+ *   background: white;
+ *   border-bottom: 1px solid #ddd;
+ * }
+ * 
+ * #custom-pdf-viewer .pdf-canvas-container {
+ *   flex: 1;
+ *   overflow: auto;
+ * }
+ */
+
+/* Optional: Hide the Canvas iframe more aggressively if needed */
+#file-preview-iframe {
+  /* The content script already sets display: none via JavaScript */
+  /* This is a backup in case the script doesn't execute in time */
+  display: none !important;
+}
+
+/* Optional: Ensure modal body fills available space */
+.css-1s2e8l1-view--block-modalBody {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+/* Optional: Ensure drawer layout fills available space */
+#file-preview-modal-drawer-layout {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  position: relative;
+}
