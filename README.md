@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Canvas PDF Viewer Interceptor
 
 A Chrome extension that intercepts Canvas LMS's default PDF viewer and replaces it with a customizable blank slate container, allowing you to implement your own PDF viewing experience.
@@ -340,3 +341,7 @@ For issues related to:
 - Blank slate custom viewer container
 - URL extraction with authentication token
 - MutationObserver-based detection
+=======
+# BetterCanvasPDF
+A chrome extension improving Canvas' PDF viewer
+>>>>>>> origin/main
